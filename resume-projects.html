@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/sticky.js"></script>
+</head>
+<body class="projects">
+<div id="header">
+    <div id="logo"><a href="/index.html"><img width="150" src="images/logo.png" /></a></div>
+    <div class="menu">
+        <div id="mc">
+            <a href="resume-education.html"><div id="edu" class="sectionblock"><p>Education</p></div></a>
+            <a href="resume-experience.html"><div id="work" class="sectionblock"><p>Experience</p></div></a>
+            <a href="resume-projects.html"><div id="proj" class="sectionblock"><p>Projects</p></div></a>
+        </div>
+    </div>
+</div>    
+<div class="content">
+		<!--The section below will be replaced by ajax-->
+		<div id="resumetext">
+        <h1>Sites that I have made...</h1>    
+        <div class="p-item">
+            <img width="500px" src="images/aoi-display.png"/>
+        </div>
+        <div class="p-item">
+            <img src="images/jg-display.png"/>
+        </div>    
+        <!--<object data=http://www.jacob-gilbert.com width="200" height="600"> <embed src=http://www.jacob-gilbert.com width="600" height="400"> </embed> Error: Embedded data could not be displayed. </object>-->
+        
+		</div>
+        <!--End of Content-->
+</div>
+
+
+<script>
+$(function() {
+	var $resumetext = $("resumetext");
+	
+  	$(document).on("click", "a, area", function() {
+		    var href = $(this).attr("href");
+			history.pushState({}, '', $(this).attr("href"));
+			$("#resumetext").load(href+" #resumetext > *");
+
+			event.preventDefault();
+	  });
+});
+</script>	
+</body>
+</html>

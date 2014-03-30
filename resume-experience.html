@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/sticky.js"></script>
+</head>
+<body>
+<div id="header">
+    <div id="logo"><a href="/index.html"><img width="150" src="images/logo.png" /></a></div>
+    <div class="menu">
+        <div id="mc">
+            <a href="resume-education.html"><div id="edu" class="sectionblock"><p>Education</p></div></a>
+            <a href="resume-experience.html"><div id="work" class="sectionblock"><p>Experience</p></div></a>
+            <a href="resume-projects.html"><div id="proj" class="sectionblock"><p>Projects</p></div></a>
+        </div>
+    </div>
+</div>    
+<div class="content">
+		<!--The section below will be replaced by ajax-->
+		<div id="resumetext">
+            <!--<h1>Experience</h1>-->
+            <h2>Technical Services Support Intern: SoftArtisans (Boston Area) - Summer 2013</h2>
+            <li>Word Template Data Generator</li>
+            <p class="indent">Designed and implemented an application to generate and populate templates with data. Consulted with coworkers for design advice and integrated the application into a testing framework to speed up troubleshooting.</p>
+            <li>Answered phones and troubleshot client issues with code</li>
+            <li>Helped perform tests and identify bugs for a new product</li>
+            <!--Fantasy Enterprise-->
+            <h2>Fantasy Enterprise (Boston Area) Summer 2012 </h2>
+            <p>Card and psychic readings company. Developers of the Tell a Fortune iPhone application.</p>
+            <li>Performed Market Research</li>
+            <li>Created and Managed a WordPress website, www.tellafortune.com  </li>
+            <li>Migrated content from old website to new website</li>
+
+            <h2>Carpentry Summer 2012 Self-taught furniture maker</h2>
+            <li>You may view my work at, www.alexkatzwoodworking.tumblr.com</li>
+            <h2>Emboodo, Tel Aviv, Israel</h2>
+            <p>Search engine optimization and marketing company headquartered in Tel Aviv with clients in Israel, Turkey, U.S. and Aruba.</p>
+            <li>Employee (offered full-time position) March 2012 through April 2012  Intern December 2011 through March 2012  Responsible for three websites ( jerusalemexperience.com; treato.com and aruba.com)</li>
+            <li> Built links on wikis, forums, and bookmarking sites  Wrote and added meta tags consisting of titles, descriptions, and keywords. Performed keyword research and on-page optimization  Corresponded with with clients and worked with IT to resolve website problems</li>
+            <h2>Carpentry and Landscaping (Boston Area) Summer 2011 Assisted General Contractor with light carpentry</h2>
+            <li>Researched proper method for setting a stone walkway, reset and leveled slate walkway based on research.</li>
+		</div>
+</div>
+<!--End of Content-->
+
+
+<script>
+$(function() {
+	var $resumetext = $("resumetext");
+	
+  	$(document).on("click", "a, area", function() {
+		    var href = $(this).attr("href");
+			history.pushState({}, '', $(this).attr("href"));
+			$("#resumetext").load(href+" #resumetext > *");
+
+			event.preventDefault();
+	  });
+});
+</script>	
+</body>
+</html>
+		

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/sticky.js"></script>
+</head>
+
+<body>
+    <div id="header">
+    <div id="logo"><a href="/index.html"><img width="150" src="images/logo.png" /></a></div>
+        <div id="line"></div>
+        <div class="menu">
+            <div id="mc">
+                <a href="resume-education.html"><div id="edu" class="sectionblock"><p>Education</p></div></a>
+                <a href="resume-experience.html"><div id="work" class="sectionblock"><p>Experience</p></div></a>
+                <a href="resume-projects.html"><div id="proj" class="sectionblock"><p>Projects</p></div></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div id="resumetext">
+            <div><img width="100" src="icons/iconmonstr-linkedin-icon-256.png"></div>
+            <div><img width="100" src="icons/iconmonstr-email-13-icon-256.png"></div>
+            
+            
+        </div>
+    </div>
+    
+    <div id="footer"></div> 
+<!--Load Content-->    
+
+<script>
+$(function() {
+	var $resumetext = $("resumetext");
+	
+  	$(document).on("click", "a, area", function() {
+		    var href = $(this).attr("href");
+			history.pushState({}, '', $(this).attr("href"));
+			$("#resumetext").load(href+" #resumetext > *");
+
+			event.preventDefault();
+	  });
+});
+</script>	
+</body>
+</html>

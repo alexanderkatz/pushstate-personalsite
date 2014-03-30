@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/sticky.js"></script>
+</head>
+<body>
+<div id="header">
+    <div id="logo"><a href="/index.html"><img width="150" src="images/logo.png" /></a></div>
+    <div id="line"></div>
+    <div class="menu">
+        <div id="mc">
+            <a href="resume-education.html"><div id="edu" class="sectionblock"><p>Education</p></div></a>
+            <a href="resume-experience.html"><div id="work" class="sectionblock"><p>Experience</p></div></a>
+            <a href="resume-projects.html"><div id="proj" class="sectionblock"><p>Projects</p></div></a>
+        </div>
+    </div>
+</div>    
+<div id="content">
+		<!--The section below will be replaced by ajax-->
+		<div id="resumetext">
+			<!--<h1>Education</h1>-->
+			<h2>Oberlin College</h2>
+				<li>Computer Science: CSCI 150 and 151</li>
+			<h2>Young Judaea Year Course in Israel</h2> 
+				<li>Tutored Ethiopian children in math and English </li>
+				<li>Taught English at an elementary school in Arad</li>
+				<li>Performed maintenance work at a youth center in Jerusalem</li>
+				<li>Interned at a search engines optimization company in Tel Aviv (Emboodo)</li>
+				<li>Courses:  Comparative Religions, Jewish Concepts, Zionism, Hebrew Language</li>
+
+			<h2>Needham High School</h2> 
+				<li>Ski team, Ultimate Frisbee.</li>
+				<li>Nominated and selected for leadership course called Be the Change, taught by the assistant principal.  Attended this course during senior year to develop communication and leadership skills.</li>
+
+		</div>
+        <!--End of Content-->
+</div>
+
+
+<script>
+$(function() {
+	var $resumetext = $("resumetext");
+	
+  	$(document).on("click", "a, area", function() {
+		    var href = $(this).attr("href");
+			history.pushState({}, '', $(this).attr("href"));
+			$("#resumetext").load(href+" #resumetext > *");
+
+			event.preventDefault();
+	  });
+});
+</script>	
+</body>
+</html>
+
+		

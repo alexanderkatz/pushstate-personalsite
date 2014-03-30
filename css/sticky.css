@@ -1,0 +1,8 @@
+* {font-family:arial; margin:0; padding:0;}
+.logo {font-size:40px; font-weight:bold;color:#a00; font-style:italic;}
+.intro {color:#777; font-style:italic; margin:10px 0;}
+.menu {background:#a00; color:#fff; height:30px; line-height:30px;letter-spacing:1px; width:100%;}
+/*.content {margin-top:10px;}*/
+/*.menu-padding {padding-top:100px;}*/
+/*.content p {margin-bottom:20px;}*/
+.sticky {position:fixed; top:0;}

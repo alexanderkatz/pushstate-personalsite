@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/sticky.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">
+			<a href="/index.html">
+				<img width="150" src="images/logo.png" />
+			</a>
+		</div>
+		<div id="line"></div>
+		<div class="menu">
+			<div id="mc">
+				<a href="resume-education.html">
+					<div id="edu" class="sectionblock">
+						<p>Education</p>
+					</div>
+				</a>
+				<a href="resume-experience.html">
+					<div id="work" class="sectionblock">
+						<p>Experience</p>
+					</div>
+				</a>
+				<a href="resume-projects.html">
+					<div id="proj" class="sectionblock">
+						<p>Projects</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div id="resumetext">
+			<div style="float:left;width:200px;height:400px;">
+				<img width="200px" src="images/me.png">
+			</div>
+			<div id="spiel">
+				<p>My name is Alex Katz. I am a Computer Science major at Oberlin College and am passionate about good design and good code.</p>
+				<p>
+					<br>Shoot me an email if you have a question or just want to chat.</p>
+				<p>
+					<a href="mailto:katzkode@gmail.com">katzkode@gmail.com</a>
+				</p>
+
+				<a href="http://www.linkedin.com/pub/alex-katz/53/991/792">
+					<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_profile_bluetxt_80x15.png" width="100" border="0" alt="View Alex Katz's profile on LinkedIn">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+	<!--Load Content-->
+
+	<script>
+	$(function() {
+		var $resumetext = $("resumetext");
+
+		$(document).on("click", "a, area", function() {
+				var href = $(this).attr("href");
+				history.pushState({}, '', $(this).attr("href"));
+				$("#resumetext").load(href+" #resumetext > *");
+
+				event.preventDefault();
+		  });
+	});
+//		$(function() {
+//			var $resumetext = $("resumetext");
+//
+//			//"$(#resumetext").fadeOut();
+//
+//
+//			$(document).on("click", "a, area", function() {
+////				$("#resumetext").css("display", "none");
+//				var href = $(this).attr("href");
+//				history.pushState({}, '', $(this).attr("href"));
+//				$("#resumetext ").load(href + "#resumetext > * ");
+//				event.preventDefault();
+//			});
+//		});
+		
+	</script>
+</body>
+
+</html>
+

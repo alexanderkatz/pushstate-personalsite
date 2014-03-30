@@ -1,0 +1,171 @@
+.indent{margin-left: 15px;}
+.p-item{
+    width: 700px;
+    margin:auto;
+    margin-top:50px;
+}
+.p-item img{width: 700px;}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{font-family: ADAM}
+/*FONTS*/
+@font-face {
+    font-family: 'ADAM';
+    src: url('fonts/adam.eot');
+    src: url('fonts/adam.eot') format('embedded-opentype'),
+         url('fonts/adam.woff') format('woff'),
+         url('fonts/adam.ttf') format('truetype'),
+         url('fonts/adam.svg#ADAMRegular') format('svg');
+}
+
+
+/* HEADER ***************************************************/
+#header{
+    background: #9ff5db;
+}
+#logo{
+    padding-top: 15px;
+    width: 150px;
+    margin: auto;
+}
+#line{
+    width: 90%;
+    height: 2px;
+    margin: auto;
+    margin-top: 15px;
+    background: white;
+}
+/*MENU ***************************************************/
+/*.menu {
+    color:#fff; 
+    height:90px; 
+    line-height:90px;
+    letter-spacing:1px; 
+    width:100%; 
+
+}.*/
+#mc{
+	margin: auto;
+	width: 500px;
+	height: 90px;
+}
+.menu{
+    background: #9ff5db;
+    height: 90px;
+    width: 500px;
+    margin: auto;
+}
+.sticky {
+    background: #9ff5db;
+    position:fixed; 
+    top:0;
+    margin: auto;
+    width: 100%;
+}
+
+.menu-padding {padding-top:90px;}
+/*Sections*/
+.sectionblock{
+	width: 33.3%;
+	height:90px;
+    float: left;
+    font-family: biko;
+}
+.sectionblock a{
+    text-decoration: none; 
+    color: black !important;
+}
+.sectionblock p{display: none;}
+.sectionblock:hover p{
+	display: block; 
+	text-align: center;
+	line-height: 100px;
+}
+
+#edu:hover{background: inherit;}
+#edu{
+	background: url('res-images/edu.png') ;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+
+}
+
+#work:hover{background:inherit;}
+#work{
+	background: url('res-images/work.png') ;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+#proj:hover{background: inherit;}
+#proj{
+	background: url('res-images/proj.png');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;}
+
+#contact:hover{background: inherit;}
+#contact{
+	background: url('res-images/email.png');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;}
+
+/* MAIN ***************************************************/
+.content{    width: 100%;
+    margin: auto;
+    height: auto;
+    /*margin-bottom: 50px;}*/}
+#main{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 50px;
+    
+}
+#resumetext{
+    margin: auto;
+    margin-top: 50px;
+    width: 800px;
+    height: auto;
+    
+    line-height: 30px;
+    font-family: times;
+}
+#resumetext h2{
+    font-size: 25px;
+    font-family: ADAM;
+    margin-top: 15px;
+}
+#resumetext p{
+    font-size: 15px;
+}
+/* FOOTER ***************************************************/
+#footer{
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    bottom: 0px;
+    /*background: rgb(10,100,150);*/
+}
+
+
+/*Home ***************************************************/
+#spiel{
+    width: 500px;
+    margin-left: 240px;
+    font-size: 18px;
+}
+#spiel p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+

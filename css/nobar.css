@@ -1,0 +1,212 @@
+/* STYLESHEET
+ * Alex Katz
+ * 3/20/14
+ */
+
+html, body{height: 100%;}
+body{background: rgb(5,55,67);width: 100%;}
+
+/*Center Class*/
+.center{margin:auto;}
+
+/*TOP SECTION*/
+#topsection{
+    width: 100%;
+    height: 100%;
+    top:  0px;
+    background: url('../images/alexComp.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#top-content{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom:0px;
+}
+
+#blurb{
+    width: 500px;
+    font-family: quicksand;
+    font-size: 25px;
+    color: white;
+    line-height: 30px;
+    padding: 30px;
+    background: rgba(5,55,67,.9);
+    margin-left: 0%;
+    margin-bottom: 10%;
+    float: right;
+    border: solid 3px;  
+    border-color: rgb(22, 149, 139);
+    border-right: none;
+    
+}
+@media all and (max-width: 575px) {
+    #blurb{    
+        font-size: 15px;
+        margin:auto;
+        width: 100%;
+        height: 220px;
+        margin: 0px;
+        margin-bottom: 10%;
+        text-align: justify;
+        padding: 0px;
+    }
+    #blurb p{width: 75%;margin: auto;}
+}
+
+#blurb a{color:white;}
+
+
+
+#logo {
+    height:250px;
+    max-width: 250px;
+    position: relative;
+    text-align: center;
+}
+#logo img{width: 90%;}
+
+/*RESUME*/
+#resume-wrapper{
+    margin:auto;
+    width: 900px;
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    z-index: 10;
+
+}
+#resume{
+    padding-top: 50px;
+    width: auto;
+    height: auto;
+    font-family: quicksand; 
+    z-index: 10;
+}
+.resume-section{
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+}
+.section-top{
+    width: auto;
+    height: 60px;
+    color: black;
+    border-bottom: solid 3px;
+    border-color: #6ec9c8;
+    margin-bottom: 30px;
+}
+.section-top h1{
+    font-size: 30px;
+    line-height: 45px;
+    font-family: futura;
+}
+.row{
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.place-year{
+    width: 20%;
+    float:left;
+    font-family: futura;
+}
+
+.description{
+    line-height: 22px;
+    width: 80%;
+    margin-left: 20%;
+    font-family: quicksand;
+    font-size: 20px;
+    text-align: justify;
+    background: zblue;
+}
+@media all and (max-width: 495px) {
+    .place-year{
+        float: none;
+        width: auto;
+        text-align: center;
+            padding-bottom: 15px;
+
+    }
+    .place-year p{
+        width: auto;
+        text-align: center;
+    }
+    .description{
+        width: 90%;
+        margin:auto;
+    }
+}
+#projects{
+    width: 100%;
+    height: 100%;
+    background: rgba(71, 190, 185, .5);
+    margin-top: 50px;
+    display: none;
+}
+#project{
+    width: 90%;
+    max-width: 1000px;
+    height: 500px; 
+    padding-top: 150px;
+}
+#project-p{
+    width: 40%;
+    height:auto;
+    float:left;
+    font-size: 20px;
+
+}
+#project-i{
+    width: 50%;
+    height:auto;
+    float:right;
+}
+#project-i img{
+    width: 100%;
+    height:auto;
+    float:right;
+}
+
+.proj-title{
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: bold;
+}
+.proj-description{
+    padding-top: 20px;
+    font-family: Quicksand;
+    line-height: 25px;
+}
+#projects ul{
+    font-family: Quicksand;
+    list-style: circle;
+    list-style-position: inside;
+       line-height: 25px;
+    font-size: 15px;
+}
+/*Menu*/
+#menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 70px;
+    height: 100%;
+    background: white; 
+    background-attachment: fixed;
+    text-align: center;
+    display: none ;
+    z-index: 10;
+}
+.item{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.item a{
+    color:black;
+    font-family: Quicksand;
+}

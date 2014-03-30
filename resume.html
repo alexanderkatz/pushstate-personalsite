@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+	<link rel="stylesheet" href="CSS/resume.css" type="CSStext/css" media="screen" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="content">
+	<div id="left-bar">
+		<a href="resume-education.html"><div id="edu" class="sectionblock"><p>Education</p></div></a>
+		<a href="resume-experience.html"><div id="work" class="sectionblock"><p>Experience</p></div></a>
+		<a href="resume-projects.html"><div id="proj" class="sectionblock"><p>Projects</p></div></a>
+	</div>
+	<div id="right-side">
+		<!--The section below will be replaced by ajax-->
+		<div id="resume-text">
+			<h1>Education</h1>
+
+			<h2>Oberlin College</h2>
+				<li>Computer Science: CSCI 150 and 151</li>
+			<h2>Young Judaea Year Course in Israel</h2> 
+				<li>Tutored Ethiopian children in math and English </li>
+				<li>Taught English at an elementary school in Arad</li>
+				<li>Performed maintenance work at a youth center in Jerusalem</li>
+				<li>Interned at a search engines optimization company in Tel Aviv (Emboodo)</li>
+				<li>Courses:  Comparative Religions, Jewish Concepts, Zionism, Hebrew Language</li>
+
+			<h2>Needham High School</h2> 
+				<li>Ski team, Ultimate Frisbee.</li>
+				<li>Nominated and selected for leadership course called Be the Change, taught by the assistant principal.  Attended this course during senior year to develop communication and leadership skills.</li>
+		</div>
+		
+	</div>
+</div>
+
+<script>
+$(function() {
+	var $resume-text = $("resume-text");
+	
+  	$(document).on("click", "a, area", function() {
+		    var href = $(this).attr("href");
+			history.pushState({}, '', $(this).attr("href"));
+			$("#resume-text").load(href+" #resume-text > *");
+
+			event.preventDefault();
+	  });
+});
+</script>
+</body>
+</html>
+
+
+
+<!--<div id="education">
+	<h1>Education</h1>
+		<h2>Oberlin College</h2>
+			<li>Computer Science: CSCI 150 and 151</li>
+
+		<h2>Young Judaea Year Course in Israel</h2> 
+			<li>Tutored Ethiopian children in math and English </li>
+			<li>Taught English at an elementary school in Arad</li>
+			<li>Performed maintenance work at a youth center in Jerusalem</li>
+			<li>Interned at a search engines optimization company in Tel Aviv (Emboodo)</li>
+			<li>Courses:  Comparative Religions, Jewish Concepts, Zionism, Hebrew Language</li>
+
+		<h2>Needham High School</h2> 
+			<li>Ski team, Ultimate Frisbee.</li>
+			<li>Nominated and selected for leadership course called Be the Change, taught by the assistant principal.  Attended this course during senior year to develop communication and leadership skills.</li>
+	</div>
+	<!--
+	
+	<div id="skills">
+	<h1>Skills</h1>
+			<li>Java Programming, Wordpress, Google Analytics and Webmasters, iMovie, Microsoft Word, Microsoft Excel, Google Documents, Adobe Photoshop and Element </li>
+			<li>Music composition and guitar; lead singer of band MKM (2007 through 2011) </li>
+			<li>Rock wall climbing instructor (2013) </li>
+	</div>-->

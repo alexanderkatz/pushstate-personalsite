@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'ADAM';
+    src: url('fonts/adam.eot');
+    src: url('fonts/adam.eot') format('embedded-opentype'),
+         url('fonts/adam.woff') format('woff'),
+         url('fonts/adam.ttf') format('truetype'),
+         url('fonts/adam.svg#ADAMRegular') format('svg');
+}

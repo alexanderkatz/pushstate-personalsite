@@ -1,0 +1,140 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/************************************************************************************/
+
+
+h1{
+	font: 30px hero;
+}
+h2{
+	padding-top: 10px;
+	font: 25px arial;
+
+}
+p{
+
+}
+li{
+	font-size: 18px;
+}
+
+html{
+	height:100%;
+	}
+body{
+	height:100%;	
+	}
+#content{
+	background: rgb(245,230,240);
+	width:calc(100% - 30px);
+	max-width: 1200px;
+	min-width: 600px;
+	height:calc(100% - 30px);
+	max-height: 750px;
+	min-width: 400px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+
+	overflow: auto;
+}
+#left-bar{
+	float:left;
+	width: 25%;
+	max-width: 250px;
+	height: calc(100% - 30px);
+	max-height: 750px;
+	background: blue;
+	position: fixed;
+}
+#right-side{
+	width:auto;
+	margin-left:25%;
+	
+}
+#resume-text h1{text-align: center;}
+#resume-text{
+	width: 75%;
+	margin: 100px auto auto auto;
+
+}
+.sectionblock{
+	width: 100%;
+	height:33.33%;
+}
+.sectionblock p{display: none;}
+.sectionblock:hover p{
+	display: block; 
+	text-align: center;
+	line-height: 100px;
+}
+
+#edu:hover{background: #6885c2;}
+#edu{
+	background: url('res-images/edu.png') #6885c2;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+
+}
+
+#work:hover{background: #74c598;}
+#work{
+	background: url('res-images/work.png') #74c598;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+#proj:hover{background: #f7f4b7;}
+#proj{
+	background: url('res-images/proj.png')#f7f4b7;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;}

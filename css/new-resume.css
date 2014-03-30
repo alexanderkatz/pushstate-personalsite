@@ -1,0 +1,139 @@
+/*Baron*/
+html, body{height: 100%;}
+/*Classes*/
+.center{margin:auto;}
+
+#main-wrapper{
+    width:auto;
+    height: 100%;
+}
+/*Sidebar*/
+#sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0px; 
+    font-family: Baron Neue;
+    text-align: center;
+    background:#053743;
+    color:white;
+}
+#sidebar a{color:white;}
+
+/*Sidebar Pages*/
+#sidebar h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*Crossfade*/
+#cf {
+    position:relative;
+    height:250px;
+    width:250px;
+    top: 20px; 
+    margin:auto;
+}
+#cf img {
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#cf img.top{
+    position: relative;
+    top:-255px;
+    width: 250px;
+}
+
+#cf img.top:hover {
+    opacity:0;
+}
+
+
+#blurb{
+    text-align: justify;    
+    margin-top: 30px;
+}
+#sidebar p{
+    font-family: Quicksand;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 18px        
+}
+#projects{
+    margin-top: 30px;
+    background: url(../images/proj-white.png) center no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+}
+#projects p{line-height: 150px;}
+/*FIRST PAGE*/
+#firstpage{
+    background:#053743;
+    background-size: 2.3%;
+    position: relative;
+    width: calc(100% - 250px);     
+    height:100%;
+    left: 250px;
+}
+/*RESUME*/
+#resume-wrapper{
+    margin-left: 250px;
+    width: auto; 
+    background: white;
+}
+#resume{
+    padding-top: 50px;
+    width: auto;
+    height: auto;
+    font-family: Baron Neue; 
+/*    border-left: solid 15px;
+    border-color: #6ec9c8;*/
+
+}
+.resume-section{
+    width: 90%;
+    min-width: 700px;
+    height: auto;
+    margin: auto;
+    
+}
+.section-top{
+    width: auto;
+    height: 40px;
+    color: black;
+    border-bottom: solid 2px;
+    border-color: #6ec9c8;
+    margin-bottom: 20px;
+}
+.section-top h1{
+    font-size: 30px;
+    line-height: 45px;
+}
+.row{
+    height: auto;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.place-year{
+    width: 30%;
+    float:left;
+    text-transform:lowercase;
+    background: zyellow;
+}
+.description{
+    line-height: 22px;
+    width: 60%;
+    margin-left: 30%;
+    font-family: Quicksand;
+    text-align: justify;
+    background: zblue;
+}
+
+#experience{
+    background:;}
+#education{
+    background:;}
+
